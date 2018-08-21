@@ -1,8 +1,9 @@
 pipeline{
 	agent any
 	stages{
-		stage('Build'){sh 'hugo'}
-	
+		stage('Build'){
+	steps{sh 'hugo'}
+	}
 	}
 
 }
